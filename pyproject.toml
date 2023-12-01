@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "py-samples"
+version = "0.1.0"
+description = "Python samples for multiple services, like datbabase, message queue, etc."
+authors = ["Lucas Lucyk <llucyk@grupospec.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "py_samples"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+redis-om = "^0.2.1"
+aiormq = "^6.7.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
